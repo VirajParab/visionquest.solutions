@@ -11,6 +11,11 @@ router.get('/',function(req,res){
   //__dirname : It will resolve to your project folder.
 });
 
+router.get('/privacy/2048motorace',function(req,res){
+  res.sendFile(path.join(__dirname+'/privacypolicy2048motorace.html'));
+  //__dirname : It will resolve to your project folder.
+});
+
 router.get('/about',function(req,res){
   res.sendFile(path.join(__dirname+'/about.html'));
 });
